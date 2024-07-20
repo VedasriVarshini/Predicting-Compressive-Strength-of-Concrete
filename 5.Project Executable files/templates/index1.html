@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="static\style.css">
+</head>
+<body>
+  <nav>
+    <a href="/" style="color: #1f43f4;font-size:larger ;font-weight: bold">Home</a>
+  </nav>
+  <h1><center>Predict concrete strength</center></h1>
+  <div class="form">
+    <form action="/result" method='post'>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="cement" placeholder="Cement" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="blast_furnace_slag" placeholder="Blast Furnace Slag" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="fly_ash" placeholder="Fly Ash" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="water" placeholder="Water" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="superplasticizer" placeholder="Superplasticizer" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="coarse_aggregate" placeholder="Coarse Aggregate" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="fine_aggregate " placeholder="Fine Aggregate" required="required" />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <input type="text" name="age" placeholder="Age" required="required" />
+          </div>
+        </div>
+      </div>
+      <input type="submit" value="predict strength">
+    </form>
+   <br>
+   <br>
+  </div>
+</body>
+</html>
